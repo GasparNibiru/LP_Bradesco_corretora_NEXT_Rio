@@ -130,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function(){
           nome: form.nome.value.trim(),
           whatsapp: form.whatsapp.value.trim(),
           email: form.email.value.trim(),
-          cnpj: form.cnpj.value.trim(),
           qtd: form.quantidade.value.trim(),
           idades: form.idades.value.trim(),
           possui: (form.querySelector('input[name="possui_plano"]:checked') || {}).value || 'Não informado'
@@ -146,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function(){
           `• Nome: ${data.nome}`,
           `• WhatsApp: ${data.whatsapp}`,
           `• E-mail: ${data.email}`,
-          `• CNPJ: ${data.cnpj || 'Não informado'}`,
           `• Pessoas no plano: ${data.qtd}`,
           `• Idades: ${data.idades}`,
           `• Já possui plano? ${data.possui}`
